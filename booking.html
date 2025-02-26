@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourtSpot</title>
+    <link rel="icon" href="Images/Logo.PNG" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Book a Court</h1>
+    </header>
+    <main>
+        <form id="bookingForm">
+            <div class="form-group">
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+               <label for="date">Date:</label>
+               <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+               <label for="time">Time:</label>
+               <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+               <label for="court">Court Type:</label>
+               <select id="court" name="court" required>
+                  <option value="tennis">Tennis</option>
+                  <option value="basketball">Basketball</option>
+                  <option value="soccer">Soccer</option>
+                  <option value="volleyball">Volleyball</option>
+                  <option value="Padel">Padel</option>
+               </select>
+            </div>
+            <button type="submit" class="btn">Confirm Booking</button>
+        </form>
+    </main>
+    <style>
+        body{
+            background-image: url("Images/R.jfif"); 
+            background-size: cover;
+        }
+    </style>
+    <script src="scripts.js"></script>
+</body>
+</html>
